@@ -577,6 +577,9 @@ figure.article-figure figcaption {
   margin-top: 1.6em;
 }
 .article-body p { color: var(--ink-soft); }
+.article-body ul { color: var(--ink-soft); padding-left: 1.25em; }
+.article-body li { margin-bottom: 0.6em; }
+.article-body li strong { color: var(--ink); }
 .article-body blockquote {
   margin: 24px 0;
   padding: 4px 0 4px 20px;
