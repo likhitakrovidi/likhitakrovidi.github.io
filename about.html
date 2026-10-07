@@ -4,78 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Likhita Krovidi</title>
+<script>document.documentElement.classList.add("js");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html">LIKHITA KROVIDI <span class="version">v1.0</span></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">MENU</button>
+    <a class="brand" href="index.html">Likhita Krovidi</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
     <nav class="primary-nav">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Changelog</a>
+      <a href="index.html#work">Work</a>
+      <a href="blog.html">Writing</a>
       <a href="about.html" aria-current="page">About</a>
-      <a href="/resume" target="_blank" rel="noopener">Resume</a>
+      <a href="/resume" target="_blank" rel="noopener">Résumé</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <section class="article-head">
+  <section class="page-head">
     <div class="wrap">
-      <span class="eyebrow">// about</span>
-      <h1>The short version: I like figuring out why things work.</h1>
+      <span class="eyebrow">About</span>
+      <h1>The short version: I like figuring out <em>why</em> things work.</h1>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap about-body">
-      <div style="display:flex; gap:32px; flex-wrap:wrap; align-items:flex-start; margin-bottom:8px;">
-        <div class="portrait-frame portrait-frame--lg">
-          <img src="assets/images/portrait.jpg" alt="Portrait of Likhita Krovidi"
-               onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.svg';">
-        </div>
-        <div style="flex:1; min-width:260px;">
-          <p>I'm Likhita — a Technical Product Manager who spent three years at OpenText shipping AI/ML models and enterprise platform capabilities, including leading the end-to-end integration of an LLM-powered service management assistant that scaled to 100K+ users without a drop in accuracy or policy alignment. Before that, I was a software engineer, which is probably why I can't look at a product without also wondering how it's built underneath.</p>
-        </div>
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap about-intro">
+      <div class="portrait-arch">
+        <img src="assets/images/portrait.jpg" alt="Likhita smiling, standing at a stone railing in a red dress"
+             onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.svg';">
       </div>
-      <p>That habit turned into this site. Every project here starts the same way — a product I use (or almost gave up on), broken down into the decisions someone made and whether I'd have made them differently. It's not about tearing things apart for the sake of it. It's about building the muscle you actually need as a PM: looking at something finished and still asking "why this, and not something else?"</p>
-      <p>My background: a B.E. in Computer Science from Osmania University, two years as a software engineer, then three more in product management at OpenText across Life Sciences, Healthcare, and AI governance — including managing the data pipeline and evaluation protocols for an enterprise LLM launch. I'm now finishing an MS in Project Management at Northeastern while working as an Enrollment Manager and figuring out what's next. I also co-founded a graduate student wellness organization from scratch, which turned out to need the same muscle as building a 0-to-1 product: no precedent, no roadmap, just a real problem and a team willing to figure it out.</p>
+      <div class="about-copy">
+        <p>I'm Likhita, a Technical Product Manager who spent three years at OpenText shipping AI/ML models and enterprise platform capabilities, including leading the end-to-end integration of an LLM-powered service management assistant that scaled to 100K+ users without a drop in accuracy or policy alignment.</p>
+        <p>Before that, I was a software engineer, which is probably why I can't look at a product without also wondering how it's built underneath.</p>
+        <p>That habit turned into this site. Every project here starts the same way: a product I use (or almost gave up on), broken down into the decisions someone made and whether I'd have made them differently. It's not about tearing things apart for the sake of it. It's about building the muscle you actually need as a PM: looking at something finished and still asking "why this, and not something else?"</p>
+        <p>My background: a B.E. in Computer Science from Osmania University, two years as a software engineer, then three more in product management at OpenText across Life Sciences, Healthcare, and AI governance, including managing the data pipeline and evaluation protocols for an enterprise LLM launch.</p>
+        <p>I'm now finishing an MS in Project Management at Northeastern while working part-time as an Enrollment Manager at the university and figuring out what's next. This semester that includes two client projects: a NASA funding case and launch plan for the nonprofit Authentic Exploration Matters, and a surgeon and drug-regimen outcomes platform for AdaptX, where I lead a 6-person team as PM.</p>
+        <p>I also co-founded a graduate student wellness organization from scratch, which turned out to need the same muscle as building a 0-to-1 product: no precedent, no roadmap, just a real problem and a team willing to figure it out.</p>
 
-      <span class="eyebrow">// spec sheet</span>
-      <dl class="spec-grid" style="margin-top: 20px;">
-        <div class="spec-item" data-reveal>
-          <dt>Background</dt>
-          <dd>B.E. Computer Science (Osmania University) · MS Project Management, Northeastern (in progress) · PMP &amp; PPM certified</dd>
-        </div>
-        <div class="spec-item" data-reveal>
-          <dt>Tools I reach for</dt>
-          <dd>SQL, Python, Jira, Confluence, Tableau</dd>
-        </div>
-        <div class="spec-item" data-reveal>
-          <dt>Currently reading</dt>
-          <dd>Season of Life — a re-read, one of my favorites</dd>
-        </div>
-        <div class="spec-item" data-reveal>
-          <dt>Outside of work</dt>
-          <dd>Hiking this summer, plus sketching, baking, and the occasional cooking experiment</dd>
-        </div>
-      </dl>
+        <ul class="facts">
+          <li><span>Education</span><span>B.E. Computer Science, Osmania University · MS Project Management, Northeastern (in progress)</span></li>
+          <li><span>Certifications</span><span>PMP &amp; PPM</span></li>
+          <li><span>Tools</span><span>SQL, Python, Jira, Confluence, Tableau</span></li>
+          <li><span>Reading</span><span><em>Season of Life</em>, a re-read and one of my favorites</span></li>
+          <li><span>Off the clock</span><span>Hiking, sketching, baking, and the occasional cooking experiment</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section class="section contact-strip" data-reveal>
+  <section class="section contact" data-reveal>
     <div class="wrap">
-      <span class="eyebrow">// get in touch</span>
       <h2>Say hello.</h2>
-      <div class="contact-links">
-        <a href="mailto:likhitakrovidi@gmail.com">Email</a>
+      <a class="email" href="mailto:likhitakrovidi@gmail.com">likhitakrovidi@gmail.com</a>
+      <div class="social">
         <a href="https://linkedin.com/in/likhitakrovidi" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/likhitakrovidi" target="_blank" rel="noopener">GitHub</a>
+        <a href="/resume" target="_blank" rel="noopener">Résumé</a>
       </div>
     </div>
   </section>
@@ -84,7 +74,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <span>© 2026 Likhita Krovidi</span>
-    <span>Built by hand, shipped on GitHub Pages</span>
+    <span>Seattle, WA</span>
   </div>
 </footer>
 

@@ -11,13 +11,17 @@ projects.html        All projects
 projects/
   project-01.html    Teardown template (Duolingo streak)
   project-02.html    Mock PRD template (Instagram Close Friends)
-blog.html            Changelog-style blog listing
+blog.html            Writing listing
 blog/
   post-01.html        Sample post
   post-02.html        Sample post
 css/style.css         All styling, design tokens at the top
-js/main.js            Mobile nav toggle
+js/main.js            Mobile nav toggle, scroll reveal
 ```
+
+## Drafts
+
+`_drafts/` holds placeholder pages (teardown and PRD templates, unfinished posts, and the full Work page mockup). GitHub Pages skips folders that start with an underscore, so nothing in there is published. When a draft is real, move it back to `projects/` or `blog/` and link it from `index.html` / `blog.html`.
 
 ## How to publish
 
@@ -36,7 +40,7 @@ js/main.js            Mobile nav toggle
 - Every placeholder is called out in the copy itself (city, email, LinkedIn, real bio, real projects).
 - Search for `example.com` and `your-handle` to find every link that needs a real destination.
 - To add a new project: duplicate `projects/project-01.html`, edit the content, then add a card for it in `projects.html` (and optionally `index.html`'s featured section).
-- To add a new blog entry: duplicate `blog/post-01.html`, then add an entry to `blog.html` at the top, bumping the version number (v0.4, v0.5, ...).
+- To add a new blog entry: duplicate `blog/post-01.html`, then add an entry to the top of the list in `blog.html` (and optionally the "Recent writing" list on `index.html`).
 
 ## Adding images
 
@@ -48,4 +52,4 @@ The site already has spots wired up for photos — you just need to drop files i
 
 ## Design notes
 
-The whole site borrows PM vocabulary on purpose — status pills, a spec sheet for the About section, changelog-style blog entries, versioned badges on projects. It's meant to feel like a product she shipped, not a résumé with a nicer font. Palette is ink/paper with a teal + gold accent; type pairs Fraunces (display) with IBM Plex Sans/Mono (body/labels) — deliberately steering away from the generic cream-and-terracotta AI look.
+Quiet and editorial: a warm paper background, Marcellus (a free lookalike for Minerva Modern) for headings, nav and body, Cormorant Garamond italic for the intro paragraph and emphasis, and one accent colour — the red from the portrait — used only for links and the email. To switch to the real Minerva Modern via Adobe Fonts, add the kit embed to each page and set `--font-display`, `--font-body` and `--font-italic` in `css/style.css` to `"minerva-modern"`. The portrait sits in an arched frame. Project tiles use flat colour blocks (`tile-art--sage`, `--sky`, `--butter`, `--blush`, `--stone`) with a one- or two-word italic label in place of a thumbnail; swap in a real image inside `.tile-art` whenever you have one.
