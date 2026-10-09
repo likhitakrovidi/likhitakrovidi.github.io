@@ -539,6 +539,54 @@ a.tile:hover h3 { color: var(--accent); }
   color: var(--ink);
 }
 
+/* intro note, plan table, checklist, references */
+.article-note {
+  margin: 0 0 40px;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.article-note p { margin: 0 0 0.7em; }
+.article-note p:last-child { margin-bottom: 0; }
+.article-note strong { color: var(--ink); }
+
+.table-scroll { overflow-x: auto; margin: 28px 0; }
+.plan-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: var(--surface);
+}
+.plan-table th,
+.plan-table td {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.plan-table th { color: var(--ink); font-weight: 400; background: var(--tile-stone); }
+.plan-table td { height: 2.6em; }
+
+.article-body ul.checklist { list-style: none; padding-left: 0; }
+.checklist li { position: relative; padding-left: 1.8em; }
+.checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 0.9em;
+  height: 0.9em;
+  border: 1px solid var(--muted);
+  border-radius: 2px;
+}
+
+.article-body ul.references { list-style: none; padding-left: 0; font-size: 0.95rem; }
+.references li { padding-left: 2em; text-indent: -2em; overflow-wrap: anywhere; }
+
 figure.article-figure { margin: 40px 0; }
 figure.article-figure img {
   width: 100%;
